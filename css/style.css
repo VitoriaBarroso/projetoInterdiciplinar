@@ -1,0 +1,390 @@
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section{
+  padding: 2rem 0%;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background: greenyellow;
+  color: black;
+  padding: 1rem 3.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover{
+  background-color: green;
+  color: white;
+}
+
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #fff;
+  font-size: 90%;
+  padding: 2rem 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header .navbar a{
+  font-style: bold;
+  font-size: 18px;
+  padding: 0 1.3rem;
+  color: #222;
+}
+header .navbar a:hover{
+  color:green
+}
+header .icons a{
+  font-size: 1.5rem;
+  color: #222;
+  margin-right: 20px;
+}
+header .icons a:hover{
+  color: green;
+}
+
+.home{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.home .imagem{
+  
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.home .imagem img{
+  width: 100%;
+  height: 300%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.5);
+}
+
+.home .conteudo{
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #fff;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.home .conteudo h3{
+  font-size: 2rem;
+  color: greenyellow;
+}
+
+.home .conteudo span{
+  font-size: 100%;
+  color: white;
+  padding:  1rem 0;
+  line-height: 1.5;
+}
+
+.home .conteudo p{
+  font-size: 1rem;
+  color: #fff;
+  padding:  1rem 0;
+  line-height: 1.5;
+}
+
+/* carousel */
+.carrousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 80%;
+  margin: auto;
+  padding: 1rem 0;
+}
+.carrousel-bloco {
+  display: flex;
+  gap: 40px;
+  /* flex-direction: column; */
+  /* margin: 10%; */
+  justify-content: center;
+  /* margin-top: -3px; */
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+}
+
+.card1 {
+  width: 300px; /*largura card*/
+  height: 200%; /*altura card*/
+  box-sizing: border-box;
+  padding: 1.5rem;
+  text-align: left;
+  background: linear-gradient(to top, white, greenyellow);
+  color: #222;
+  border-radius: 10px;
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+
+.card1:nth-child(2) {
+  background: #D90429;
+  color: white;
+}
+
+.card1:nth-child(3) {
+  background: linear-gradient(to top, white, greenyellow);
+  color: #222;
+}
+
+
+.card1:nth-child(4) {
+  background: #D90429;
+  color: white;
+}
+
+
+.card1 h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card1 p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card1 img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  align-items: center;
+}
+
+/* .carrousel-btn {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.carrousel-btn.prev {
+    left: 10px;
+}
+
+.carrousel-btn.next {
+    right: 10px;
+} */
+
+/* historia da empresa */
+
+.historia {
+  /* background-color: #8ED959;
+  color: #222; */
+  margin-top: 10%;
+  background-color: #04471c;
+  color: white;
+  padding: 60px 30px;
+  font-family: sans-serif;
+}
+
+.historia-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.historia-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.historia-conteudo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.texto-historia {
+  min-width: 200px;
+}
+
+.historia-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.historia-descricao {
+  font-size: 1rem;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.imagem-historia {
+  flex: 1;
+  min-width: 300px;
+}
+
+.imagem-historia img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+/* produtos cards */
+
+.titulo-produtos {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #04471c;
+  font-weight: bold;
+}
+
+
+.produto-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.produto-card {
+  width: 200px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.produto-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.produto-card h4 {
+  font-size: 1.1rem;
+  margin: 0.5em 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card-footer i {
+  font-size: 1.2rem;
+  color: #04471c;
+}
+
+.produto-card button {
+  background-color: #04471c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.produto-card:hover {
+  background-color: #04471c;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.produto-card:hover button {
+  background-color: white;
+  color: #04471c;
+}
+
+/* footer */
+.footer {
+  background-color: #04471c;
+  color: white;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer-conteudo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-sessao {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-sessao h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-sessao p,
+.footer-sessao a {
+  font-size: 0.95rem;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  display: block;
+}
+
+.footer-sessao a:hover {
+  color: white;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
