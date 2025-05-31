@@ -15,27 +15,23 @@
   setInterval(slideCarousel, 3000); // muda a cada 3 segundos
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    let lastScrollTop = 0;
+    const segundaSecao = document.querySelector(".segunda_section");
 
-// // Adiciona o evento de rolagem
-// window.addEventListener("scroll", verificarCarrossel);
+    window.addEventListener("scroll", function () {
+        let scrollTop = window.scrollY;
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     let lastScrollTop = 0;
-//     const segundaSecao = document.querySelector(".segunda_section");
+        if (scrollTop > lastScrollTop) {
+            // Rolando para baixo, esconde a segunda seção
+            segundaSecao.classList.remove("fade-out");
+        } else {
+            // Rolando para cima, exibe a segunda seção
+            segundaSecao.classList.add("fade-out");
+        }
 
-//     window.addEventListener("scroll", function () {
-//         let scrollTop = window.scrollY;
-
-//         if (scrollTop > lastScrollTop) {
-//             // Rolando para baixo, esconde a segunda seção
-//             segundaSecao.classList.remove("fade-out");
-//         } else {
-//             // Rolando para cima, exibe a segunda seção
-//             segundaSecao.classList.add("fade-out");
-//         }
-
-//         lastScrollTop = scrollTop;
-//     });
-// });
+        lastScrollTop = scrollTop;
+    });
+});
 
 
