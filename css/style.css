@@ -45,6 +45,9 @@ header{
   z-index: 1000;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
+header img{
+  width: 8%;
+}
 header .navbar a{
   font-style: bold;
   font-size: 18px;
@@ -320,7 +323,7 @@ header .icons a:hover{
 }
 
 .produto-card {
-  width: 200px;
+  width: 300px;
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
