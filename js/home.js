@@ -8,7 +8,7 @@
     if (index >= cards.length) {
       index = 0;
     }
-    const cardWidth = cards[0].offsetWidth + 20; // 300px + margem
+    const cardWidth = cards[0].offsetWidth + 20; 
     carrousel.style.transform = `translateX(-${index * cardWidth}px)`;
   }
 
