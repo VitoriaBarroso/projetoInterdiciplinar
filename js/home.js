@@ -34,4 +34,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// responsividade nav
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuBtn = document.querySelector('#menu-btn');
+    const closeBtn = document.querySelector('#close-btn');
+    const navbar = document.querySelector('.navbar');
+
+    menuBtn.addEventListener('click', () => {
+        navbar.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        navbar.classList.remove('active');
+    });
+});
+
 
