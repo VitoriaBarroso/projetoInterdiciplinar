@@ -14,25 +14,26 @@
 
   setInterval(slideCarousel, 3000); // muda a cada 3 segundos
 
+// Efeito de fade-in para a segunda seção ao rolar a página
 
-document.addEventListener("DOMContentLoaded", function () {
-    let lastScrollTop = 0;
-    const segundaSecao = document.querySelector(".segunda_section");
+// document.addEventListener("DOMContentLoaded", function () {
+//     let lastScrollTop = 0;
+//     const segundaSecao = document.querySelector(".segunda_section");
 
-    window.addEventListener("scroll", function () {
-        let scrollTop = window.scrollY;
+//     window.addEventListener("scroll", function () {
+//         let scrollTop = window.scrollY;
 
-        if (scrollTop > lastScrollTop) {
-            // Rolando para baixo, esconde a segunda seção
-            segundaSecao.classList.remove("fade-out");
-        } else {
-            // Rolando para cima, exibe a segunda seção
-            segundaSecao.classList.add("fade-out");
-        }
+//         if (scrollTop > lastScrollTop) {
+//             // Rolando para baixo, esconde a segunda seção
+//             segundaSecao.classList.remove("fade-out");
+//         } else {
+//             // Rolando para cima, exibe a segunda seção
+//             segundaSecao.classList.add("fade-out");
+//         }
 
-        lastScrollTop = scrollTop;
-    });
-});
+//         lastScrollTop = scrollTop;
+//     });
+// });
 
 // responsividade nav
 

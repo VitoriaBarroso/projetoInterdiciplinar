@@ -388,7 +388,7 @@ header .icons a:hover{
 }
 .fade-out{
   opacity: 0;
-  transform: translateY(-80px);
+  transform: translateY(-90px);
   pointer-events: none;
 }
 .texto-area{
@@ -485,6 +485,7 @@ header .icons a:hover{
   font-size: 1.5rem;
   margin-right: 15px;
   color: white;
+  flex-direction: row;
   transition: color 0.3s;
 }
 

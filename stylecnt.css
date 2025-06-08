@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #ffffff;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header img {
+  height: 60px;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #0f7f25;
+}
+
+.icons a {
+  color:#2e8b57 ;
+  font-size: 1.5rem;
+  margin-left: 0rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2e8b57;
+  font-size: 2.5rem;
+}
+
+.contato-secao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contato-info, .contato-form {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contato-info h2, .contato-form h2 {
+  color: #2e8b57;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.contato-item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.contato-icon {
+  color: #2e8b57;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+
+.contato-texto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.contato-texto p {
+  color: #666;
+}
+
+.contato-form input,
+.contato-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contato-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.btn {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3cb371;
+}
+
+.mapa {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.mapa h2 {
+  color: #2e8b57;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: #2e8b57;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+.social-icone {
+  margin-top: 1rem;
+}
+
+.social-icone a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icone a:hover {
+  color: #a7e6a5;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 992px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .contact-section {
+    flex-direction: column;
+  }
+  
+  .contato-info, .contact-form {
+    width: 100%;
+  }
+  
+  iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+  
+  .navbar {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .icons {
+    margin-top: 1rem;
+  }
+  
+  .titulo {
+    font-size: 2rem;
+  }
+  
+  .contato-info h2, 
+  .contato-form h2,
+  .mapa h2 {
+    font-size: 1.5rem;
+  }
+  
+  iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .navbar {
+    gap: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contato-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contato-icon {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contato-form input,
+  .contato-form textarea {
+    padding: 0.7rem;
+  }
+  
+  .btn {
+    padding: 0.7rem 1.2rem;
+  }
+  
+  iframe {
+    height: 300px;
+  }
+  
+  footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .social-icone a {
+    font-size: 1.3rem;
+    margin: 0 0.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .titulo {
+    font-size: 1.6rem;
+  }
+  
+  .contato-info, 
+  .contato-form {
+    padding: 1.5rem 1rem;
+  }
+  
+  iframe {
+    height: 250px;
+  }
+}
+
