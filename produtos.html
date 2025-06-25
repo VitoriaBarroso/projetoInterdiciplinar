@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos - Ecotubos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="logo">
+
+  <div id="menu-btn" class="fas fa-bars"></div>
+
+  <nav class="navbar" id="navbar">
+    <span id="close-btn" class="fas fa-times"></span> 
+    <a href="index.html">Ecotubos</a>
+    <a href="quemSomos.html">Quem Somos</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="novidades.html">Fique Sabendo</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <div class="icons">
+    <a href="#" class="fas fa-shopping-cart"></a>
+  </div>
+</header>
+
+
+
+<!-- Seção de Produtos -->
+<div class="container">
+  <h1 class="titulo">Nossos Produtos</h1>
+  <div class="products">
+    <!-- Produto -->
+    <div class="product">
+      <img src="papelão4.jpg" alt="5mm">
+      <h3>Rolo de Papelão 5mm</h3>
+      <p>Peso: 0,500kg</p>
+      <button class="btn" onclick="openForm('Rolo de Papelão 5mm')">Saiba Mais</button>
+    </div>
+    <div class="product">
+      <img src="papelao5.jpg" alt="10mm">
+      <h3>Rolo de Papelão 10mm</h3>
+      <p>Peso: 1,0kg</p>
+      <button class="btn" onclick="openForm('Rolo de Papelão 10mm')">Saiba Mais</button>
+    </div>
+    <div class="product">
+      <img src="download.jpg" alt="12mm">
+      <h3>Rolo de Papelão 12mm</h3>
+      <p>Peso: 1,2kg</p>
+      <button class="btn" onclick="openForm('Rolo de Papelão 12mm')">Saiba Mais</button>
+    </div>
+    <div class="product">
+      <img src="papelão.png" alt="15mm">
+      <h3>Rolo de Papelão 15mm</h3>
+      <p>Peso: 1,5kg</p>
+      <button class="btn" onclick="openForm('Rolo de Papelão 15mm')">Saiba Mais</button>
+    </div>
+    <div class="product">
+      <img src="papelão 2.png" alt="17mm">
+      <h3>Rolo de Papelão 17mm</h3>
+      <p>Peso: 1,7kg</p>
+      <button class="btn" onclick="openForm('Rolo de Papelão 17mm')">Saiba Mais</button>
+    </div>
+    <div class="product">
+      <img src="papelão3.png" alt="20mm">
+      <h3>Rolo de Papelão 20mm</h3>
+      <p>Peso: 2,0kg</p>
+      <button class="btn" onclick="openForm('Rolo de Papelão 20mm')">Saiba Mais</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal do Formulário -->
+<div id="formModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeForm()">&times;</span>
+    <h2 id="productTitle"></h2>
+    <form id="orderForm">
+      <label>Nome:</label><br>
+      <input type="text" name="nome" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Telefone:</label><br>
+      <input type="tel" name="telefone" required><br><br>
+
+      <label>Endereço:</label><br>
+      <input type="text" name="endereco" required><br><br>
+
+      <label>CEP:</label><br>
+      <input type="text" name="cep" required><br><br>
+
+      <label>Quantidade de Tubos:</label><br>
+      <input type="number" id="quantity" name="quantity" min="1" value="1" required><br><br>
+
+      <button type="submit" class="btn">Finalizar Compra</button>
+    </form>
+    <div id="successMessage" class="success-message">👍 Pedido enviado com sucesso!</div>
+  </div>
+</div>
+
+<!-- Mapa -->
+<div class="mapa">
+  <h2>Onde Estamos</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.186353867872!2d-46.45955482530389!3d-23.525981660456742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ed24670cfab%3A0xf114c7d0fce22aa7!2sRua%20Paratiba%2C%20460%20-%20Jardim%20Nordeste%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008215-340!5e0!3m2!1spt-BR!2sbr!4v1717619500051!5m2!1spt-BR!2sbr"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<!-- Fale Conosco -->
+<footer class="fale-conosco">
+  <h2>Fale Conosco</h2>
+  <p><strong>Diretoria –</strong> Fábio Pirozeli | 📞 (11) 9 6624-0118</p>
+  <p><strong>Vendas –</strong> Paula | 📞 (11) 9 1640-0779 | 📧 vendas.ecotubos001@gmail.com</p>
+  <p><strong>Vendas –</strong> Sheila | 📞 (11) 9 7352-9553 | 📧 vendas.ecotubos002@gmail.com</p>
+  <p><strong>Compras –</strong> Mariana | 📞 (11) 9 7596-0393 | 📧 compras.ecotubos01@gmail.com</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
